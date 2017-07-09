@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="designMode-common" />
+        <module name="designMode-domain" />
+        <module name="designMode-service" />
+        <module name="designMode-web" />
+        <module name="web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="designMode-common" target="1.5" />
+      <module name="designMode-domain" target="1.5" />
+      <module name="designMode-parent" target="1.8" />
+      <module name="designMode-service" target="1.8" />
+      <module name="designMode-web" target="1.5" />
+      <module name="web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
