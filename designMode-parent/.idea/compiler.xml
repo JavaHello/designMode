@@ -14,8 +14,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="designMode-common" target="1.5" />
-      <module name="designMode-domain" target="1.5" />
+      <module name="designMode-common" target="1.8" />
+      <module name="designMode-domain" target="1.8" />
       <module name="designMode-parent" target="1.8" />
       <module name="designMode-service" target="1.8" />
       <module name="designMode-web" target="1.5" />
