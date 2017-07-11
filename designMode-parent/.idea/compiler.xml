@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api" />
         <module name="designMode-common" />
         <module name="designMode-domain" />
         <module name="designMode-service" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api" target="1.8" />
       <module name="designMode-common" target="1.8" />
       <module name="designMode-domain" target="1.8" />
       <module name="designMode-parent" target="1.8" />
