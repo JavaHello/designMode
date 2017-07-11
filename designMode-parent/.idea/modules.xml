@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../designMode-api/api.iml" filepath="$PROJECT_DIR$/../designMode-api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../designMode-common/designMode-common.iml" filepath="$PROJECT_DIR$/../designMode-common/designMode-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/../designMode-domain/designMode-domain.iml" filepath="$PROJECT_DIR$/../designMode-domain/designMode-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/designMode-parent.iml" filepath="$PROJECT_DIR$/designMode-parent.iml" />

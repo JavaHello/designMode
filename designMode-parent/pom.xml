@@ -192,5 +192,6 @@
         <module>../designMode-domain</module>
         <module>../designMode-service</module>
         <module>../designMode-web</module>
+        <module>../designMode-api</module>
     </modules>
 </project>
