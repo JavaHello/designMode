@@ -22,6 +22,7 @@
         <servlet.version>3.0.1</servlet.version>
         <jsp.version>2.0</jsp.version>
         <cglib.version>3.1</cglib.version>
+        <shiro.version>1.4.0</shiro.version>
     </properties>
 
     <dependencyManagement>
@@ -147,6 +148,29 @@
                 <artifactId>pagehelper</artifactId>
                 <version>${pagehelper.version}</version>
             </dependency>
+
+            <!-- SECURITY shiro begin -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-web</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-ehcache</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <!-- SECURITY shiro end -->
 
         </dependencies>
     </dependencyManagement>
