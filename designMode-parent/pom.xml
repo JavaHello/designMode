@@ -11,6 +11,7 @@
     <properties>
         <java.version>1.8</java.version>
         <springframework.version>4.3.9.RELEASE</springframework.version>
+        <junit.version>4.12</junit.version>
         <mysql.version>6.0.6</mysql.version>
         <druid.version>1.1.0</druid.version>
         <mybatis.version>3.4.4</mybatis.version>
@@ -23,11 +24,19 @@
         <jsp.version>2.0</jsp.version>
         <cglib.version>3.1</cglib.version>
         <shiro.version>1.4.0</shiro.version>
+        <hibernate.validator.version>6.0.0.CR3</hibernate.validator.version>
+        <redis.version>2.9.0</redis.version>
+        <spring.data.redis.version>1.8.4.RELEASE</spring.data.redis.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <!-- spring framework -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${springframework.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
@@ -171,6 +180,33 @@
                 <version>${shiro.version}</version>
             </dependency>
             <!-- SECURITY shiro end -->
+
+            <!-- Hibernate Validator -->
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate.validator.version}</version>
+            </dependency>
+
+            <!-- Redis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>${spring.data.redis.version}</version>
+            </dependency>
+
+            <!-- junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
