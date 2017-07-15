@@ -71,7 +71,7 @@
         </property>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <property name="basePackage" value="com.openfree.domain.mapper" />
     </bean>
 

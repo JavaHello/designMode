@@ -1,0 +1,6 @@
+com/openfree/domain/mapper/user/UserRegTraceMapper.class
+com/openfree/domain/mapper/user/UserInfoMapper.class
+com/openfree/domain/model/user/UserRegTrace.class
+com/openfree/domain/Examined.class
+com/openfree/domain/StandardModel.class
+com/openfree/domain/model/user/UserInfo.class

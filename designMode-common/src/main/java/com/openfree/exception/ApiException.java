@@ -11,7 +11,7 @@ public class ApiException extends Exception {
 
     private String message;
 
-    public ApiException(ErrorCodeEnum errorCodeEnum) {
+    public  ApiException(ErrorCodeEnum errorCodeEnum) {
         this(errorCodeEnum.getCode(), errorCodeEnum.getMessage());
     }
 

@@ -9,6 +9,8 @@ import com.openfree.exception.ApiException;
 import com.openfree.service.token.ApiService;
 import com.openfree.service.token.TokenInfo;
 import org.apache.shiro.crypto.hash.Md5Hash;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +24,8 @@ import java.util.UUID;
  */
 @Service("apiService")
 public class ApiServiceImpl implements ApiService {
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     private final static String SIGN = "sign";
 
@@ -72,10 +76,14 @@ public class ApiServiceImpl implements ApiService {
 
     @Override
     public void sign(JSONObject param, TokenInfo tokenInfo) throws ApiException {
-        if (param == null)
-            throw new ApiException(ErrorCodeEnum.PARAMETER_IS_NULL);
-        if (tokenInfo == null)//invalid
-            throw new ApiException(ErrorCodeEnum.TOKEN_INVALID);
+        if (param == null){
+            logger.info("参数为空,不予签名");
+            return;
+        }
+        if (tokenInfo == null){
+            logger.info("token为空,不予签名");
+            return;
+        }
         String signParam = genSignParam(param, SIGN);
         String singValue = new Md5Hash(signParam, tokenInfo.getSecret()).toHex();
         param.put(SIGN, singValue);

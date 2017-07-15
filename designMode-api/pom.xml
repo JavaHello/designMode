@@ -18,10 +18,25 @@
             <artifactId>designMode-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+
+
+
+        <!-- junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+
 
         <!-- jstl -->
         <dependency>

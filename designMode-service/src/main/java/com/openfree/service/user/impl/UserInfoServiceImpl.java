@@ -2,11 +2,15 @@ package com.openfree.service.user.impl;
 
 import com.openfree.domain.mapper.user.UserInfoMapper;
 import com.openfree.domain.model.user.UserInfo;
+import com.openfree.enums.ErrorCodeEnum;
+import com.openfree.exception.ApiException;
 import com.openfree.service.user.UserInfoService;
 import com.openfree.service.util.PasswordHelper;
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -57,5 +61,23 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public UserInfo findByUserName(String username) {
         return userInfoMapper.findByUserName(username);
+    }
+
+    @Override
+    public boolean verifyExist(String username, String email) throws ApiException {
+        Map<String,Object> queryMap = new HashMap<>();
+        queryMap.put("username", username);
+        List<UserInfo> userInfoList = userInfoMapper.selectByUsernameOrEmail(queryMap);
+        if (CollectionUtils.isNotEmpty(userInfoList)){
+            throw new ApiException(ErrorCodeEnum.USER_EXIST);
+        }
+        queryMap.remove("username");
+        queryMap.put("email", email);
+        userInfoList = userInfoMapper.selectByUsernameOrEmail(queryMap);
+        if (CollectionUtils.isNotEmpty(userInfoList)){
+            throw new ApiException(ErrorCodeEnum.EMAIL_EXIST);
+        }
+        return false;
+
     }
 }

@@ -28,6 +28,9 @@
         <redis.version>2.9.0</redis.version>
         <spring.data.redis.version>1.8.4.RELEASE</spring.data.redis.version>
         <fastjson.version>1.2.34</fastjson.version>
+        <commons-io.version>2.5</commons-io.version>
+        <commons-lang3.version>3.6</commons-lang3.version>
+        <commons-collections.version>3.2.2</commons-collections.version>
     </properties>
 
     <dependencyManagement>
@@ -214,6 +217,27 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
+
+            <!-- apache commons -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons-collections.version}</version>
+            </dependency>
+
+
+
+
 
 
         </dependencies>

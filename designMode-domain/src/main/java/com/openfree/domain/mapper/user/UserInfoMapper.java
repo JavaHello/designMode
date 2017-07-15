@@ -21,4 +21,6 @@ public interface UserInfoMapper {
     List<UserInfo> findAll(Map<String, Object> queryMap);
 
     UserInfo findByUserName(String username);
+
+    List<UserInfo> selectByUsernameOrEmail(Map<String, Object> queryMap);
 }
