@@ -1,11 +1,20 @@
 package com.openfree.domain.model.user;
 
-import com.openfree.domain.StandardModel;
-
 import java.io.Serializable;
 import java.util.Date;
 
-public class UserInfo extends StandardModel implements Serializable {
+public class UserInfo implements Serializable {
+    private Long id;
+
+    private Integer version;
+
+    private Date createTime;
+
+    private Long createUserId;
+
+    private Date lastUpdateTime;
+
+    private Long lastUpdateUserId;
 
     private String username;
 
@@ -29,9 +38,55 @@ public class UserInfo extends StandardModel implements Serializable {
 
     private String address;
 
-    private UserRegTrace userRegTrace;
-
     private static final long serialVersionUID = 1L;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Long getCreateUserId() {
+        return createUserId;
+    }
+
+    public void setCreateUserId(Long createUserId) {
+        this.createUserId = createUserId;
+    }
+
+    public Date getLastUpdateTime() {
+        return lastUpdateTime;
+    }
+
+    public void setLastUpdateTime(Date lastUpdateTime) {
+        this.lastUpdateTime = lastUpdateTime;
+    }
+
+    public Long getLastUpdateUserId() {
+        return lastUpdateUserId;
+    }
+
+    public void setLastUpdateUserId(Long lastUpdateUserId) {
+        this.lastUpdateUserId = lastUpdateUserId;
+    }
 
     public String getUsername() {
         return username;
@@ -121,18 +176,6 @@ public class UserInfo extends StandardModel implements Serializable {
         this.address = address == null ? null : address.trim();
     }
 
-    public UserRegTrace getUserRegTrace() {
-        return userRegTrace;
-    }
-
-    public void setUserRegTrace(UserRegTrace userRegTrace) {
-        this.userRegTrace = userRegTrace;
-    }
-
-    public String getChaos(){
-        return this.username + this.id;
-    }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -140,6 +183,7 @@ public class UserInfo extends StandardModel implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
+        sb.append(", version=").append(version);
         sb.append(", createTime=").append(createTime);
         sb.append(", createUserId=").append(createUserId);
         sb.append(", lastUpdateTime=").append(lastUpdateTime);

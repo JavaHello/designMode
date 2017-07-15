@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.openfree.domain.mapper.user.UserInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.openfree.domain.model.user.UserInfo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="version" property="version" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_user_id" property="createUserId" jdbcType="BIGINT" />
+    <result column="last_update_time" property="lastUpdateTime" jdbcType="TIMESTAMP" />
+    <result column="last_update_user_id" property="lastUpdateUserId" jdbcType="BIGINT" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="upassword" property="upassword" jdbcType="VARCHAR" />
+    <result column="salt" property="salt" jdbcType="VARCHAR" />
+    <result column="gender" property="gender" jdbcType="SMALLINT" />
+    <result column="job" property="job" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="district" property="district" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <association property="userRegTrace" select="com.openfree.domain.mapper.user.UserRegTraceMapper.selectByUserId" column="id"/>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, version, create_time, create_user_id, last_update_time, last_update_user_id,
+    username, nickname, upassword, salt, gender, job, email, province, city, district,
+    address
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select
+    <include refid="Base_Column_List" />
+    from user_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from user_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.openfree.domain.model.user.UserInfo" >
+    insert into user_info (id, version, create_time,
+    create_user_id, last_update_time, last_update_user_id,
+    username, nickname, upassword,
+    salt, gender, job,
+    email, province, city,
+    district, address)
+    values (#{id,jdbcType=BIGINT}, #{version,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP},
+    #{createUserId,jdbcType=BIGINT}, #{lastUpdateTime,jdbcType=TIMESTAMP}, #{lastUpdateUserId,jdbcType=BIGINT},
+    #{username,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{upassword,jdbcType=VARCHAR},
+    #{salt,jdbcType=VARCHAR}, #{gender,jdbcType=SMALLINT}, #{job,jdbcType=VARCHAR},
+    #{email,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR},
+    #{district,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.openfree.domain.model.user.UserInfo" >
+    insert into user_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="version != null" >
+        version,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="createUserId != null" >
+        create_user_id,
+      </if>
+      <if test="lastUpdateTime != null" >
+        last_update_time,
+      </if>
+      <if test="lastUpdateUserId != null" >
+        last_update_user_id,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="nickname != null" >
+        nickname,
+      </if>
+      <if test="upassword != null" >
+        upassword,
+      </if>
+      <if test="salt != null" >
+        salt,
+      </if>
+      <if test="gender != null" >
+        gender,
+      </if>
+      <if test="job != null" >
+        job,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="province != null" >
+        province,
+      </if>
+      <if test="city != null" >
+        city,
+      </if>
+      <if test="district != null" >
+        district,
+      </if>
+      <if test="address != null" >
+        address,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="version != null" >
+        #{version,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null" >
+        #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="lastUpdateTime != null" >
+        #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateUserId != null" >
+        #{lastUpdateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null" >
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="upassword != null" >
+        #{upassword,jdbcType=VARCHAR},
+      </if>
+      <if test="salt != null" >
+        #{salt,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null" >
+        #{gender,jdbcType=SMALLINT},
+      </if>
+      <if test="job != null" >
+        #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null" >
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null" >
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="district != null" >
+        #{district,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.openfree.domain.model.user.UserInfo" >
+    update user_info
+    <set >
+      <if test="version != null" >
+        version = #{version,jdbcType=INTEGER} + 1,
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUserId != null" >
+        create_user_id = #{createUserId,jdbcType=BIGINT},
+      </if>
+      <if test="lastUpdateTime != null" >
+        last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="lastUpdateUserId != null" >
+        last_update_user_id = #{lastUpdateUserId,jdbcType=BIGINT},
+      </if>
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null" >
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="upassword != null" >
+        upassword = #{upassword,jdbcType=VARCHAR},
+      </if>
+      <if test="salt != null" >
+        salt = #{salt,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null" >
+        gender = #{gender,jdbcType=SMALLINT},
+      </if>
+      <if test="job != null" >
+        job = #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null" >
+        province = #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null" >
+        city = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="district != null" >
+        district = #{district,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT} AND version = #{version,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.openfree.domain.model.user.UserInfo" >
+    update user_info
+    set version = #{version,jdbcType=INTEGER} + 1,
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_user_id = #{createUserId,jdbcType=BIGINT},
+      last_update_time = #{lastUpdateTime,jdbcType=TIMESTAMP},
+      last_update_user_id = #{lastUpdateUserId,jdbcType=BIGINT},
+      username = #{username,jdbcType=VARCHAR},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      upassword = #{upassword,jdbcType=VARCHAR},
+      salt = #{salt,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=SMALLINT},
+      job = #{job,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      province = #{province,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      district = #{district,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT} AND version = #{version,jdbcType=INTEGER}
+  </update>
+
+  <sql id="find_all_sql">
+    <if test="id != null and id != ''">
+      ID = #{id, jdbcType=BIGINT}
+    </if>
+  </sql>
+
+  <select id="findAll" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from user_info
+    <where>
+      <include refid="find_all_sql"/>
+    </where>
+  </select>
+  <select id="findByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from user_info where username =#{_parameter, jdbcType=VARCHAR}
+  </select>
+</mapper>

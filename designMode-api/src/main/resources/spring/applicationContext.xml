@@ -57,7 +57,7 @@
 				<value>classpath:mappers/**/*Mapper.xml</value>
 			</array>
 		</property>
-		<property name="typeAliasesPackage" value="com.openfree.domain.mappers"/>
+		<property name="typeAliasesPackage" value="com.openfree.domain.mapper"/>
 		<property name="plugins">
 			<array>
 				<bean class="com.github.pagehelper.PageInterceptor">

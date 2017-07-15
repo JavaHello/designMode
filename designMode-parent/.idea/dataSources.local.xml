@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="openfree@localhost" uuid="51289d82-874d-41d4-b70e-7252f6e76b30">
+      <database-info product="MySQL" version="5.7.18-0ubuntu0.16.04.1" jdbc-version="4.1" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-6.0.6 ( Revision: 3dab84f4d9bede3cdd14d57b99e9e98a02a5b97d )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>mysql_dba</user-name>
+      <introspection-schemas>*:openfree</introspection-schemas>
+    </data-source>
+  </component>
+</project>

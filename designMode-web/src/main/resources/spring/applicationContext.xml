@@ -51,12 +51,12 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis/mybatisConfig.xml"/>
         <property name="mapperLocations">
             <array>
                 <value>classpath:mappers/**/*Mapper.xml</value>
             </array>
         </property>
-        <property name="typeAliasesPackage" value="com.openfree.domain.mappers"/>
         <property name="plugins">
             <array>
                 <bean class="com.github.pagehelper.PageInterceptor">
@@ -70,6 +70,11 @@
             </array>
         </property>
     </bean>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+        <property name="basePackage" value="com.openfree.domain.mapper" />
+    </bean>
+
 
 
     <!-- 事物管理 -->
