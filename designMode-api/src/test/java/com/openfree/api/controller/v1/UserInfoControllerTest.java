@@ -24,9 +24,10 @@ public class UserInfoControllerTest extends BaseControllerTest {
     public void testRegisterUser() throws Exception {
         logger.info("Test: UserInfoControllerTest.testRegisterUser()");
         JSONObject reqObj = new JSONObject();
-        //"username", "upassword", "email", "province", "city","district"
+        //"username", "upassword", "email", "province", "city","district",gender
         reqObj.put("username", "zhang");
         reqObj.put("upassword", "123123");
+        reqObj.put("gender", "1");
         reqObj.put("email", "123123@open.com");
         reqObj.put("province", "北京");
         reqObj.put("city", "北京市");
@@ -36,6 +37,7 @@ public class UserInfoControllerTest extends BaseControllerTest {
         UserInfo zhang = userInfoService.findByUserName("zhang");
         Assert.assertTrue("注册失败:参数不匹配", new EqualsBuilder()
                 .append(zhang.getUsername(),reqObj.getString("username"))
+                .append(zhang.getGender(),reqObj.getShort("gender"))
                 .append(zhang.getEmail(),reqObj.getString("email"))
                 .append(zhang.getProvince(),reqObj.getString("province"))
                 .append(zhang.getCity(),reqObj.getString("city"))

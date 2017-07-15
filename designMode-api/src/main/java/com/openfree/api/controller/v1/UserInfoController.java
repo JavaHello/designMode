@@ -43,10 +43,12 @@ public class UserInfoController extends BaseController {
             String param = readRequestParam(request);
             logger.info(interfaceName + "请求参数:{}", param);
             JSONObject reqJson = JSON.parseObject(param);
-            verifyParamEmpty(reqJson, "username", "upassword", "email", "province", "city","district");
+            verifyParamEmpty(reqJson, "username", "upassword", "email", "province", "city","district", "gender");
             UserInfo userInfo = reqJson.toJavaObject(UserInfo.class);
-            userInfoService.verifyExist(userInfo.getUsername(), userInfo.getEmail())
+            userInfoService.verifyExist(userInfo.getUsername(), userInfo.getEmail());
+            userInfo.setCreateUserId(1L);
             userInfoService.registerUser(userInfo);
+            putSuccessMessage(respObj, interfaceName + "成功");
         } catch (ApiException e) {
             logger.error(interfaceName + "异常", e);
             putMessage(respObj, e.getCode(), e.getMessage());
