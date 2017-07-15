@@ -31,6 +31,17 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-oxm:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.34" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-lang:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-crypto-hash:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-crypto-core:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-crypto-cipher:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-config-core:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-config-ogdl:1.4.0" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.3" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-event:1.4.0" />
           <element id="archive" name="designMode-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="designMode-common" />
           </element>
@@ -52,20 +63,10 @@
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.12" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-lang:1.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-cache:1.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-crypto-hash:1.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-crypto-core:1.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-crypto-cipher:1.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-config-core:1.4.0" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-config-ogdl:1.4.0" />
-          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.3" />
-          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
-          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-event:1.4.0" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-spring:1.4.0" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.4.0" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-ehcache:1.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-cache:1.4.0" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.6.11" />
         </element>
       </element>

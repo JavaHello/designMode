@@ -22,7 +22,7 @@ public class RedisHelperTest extends BaseServiceTest {
         logger.info("Test: RedisHelperTest.testSaveObjAndGetObj()");
         String obj = "world";
         String key = "hello";
-        redisHelper.saveObj(key, obj);
+        redisHelper.saveObj(key, obj, 5);
         Object hello = redisHelper.getCacheObject(key);
         logger.info("saveObj[key:{},value:{}]", key, hello);
         assertTrue(obj.equals(hello));

@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 public class TokenInfo implements Serializable {
 
+    private static final long serialVersionUID = 3065453814066248476L;
     private String userId;
 
     private Long id;

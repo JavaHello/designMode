@@ -10,7 +10,9 @@ package com.openfree.enums;
 public enum ErrorCodeEnum {
 
 
-    PARAMETER_IS_NULL(400001, "参数不能为空");
+    PARAMETER_IS_NULL(400001, "参数不能为空"),
+    TOKEN_INVALID(400002, "无效的token"),
+    VERIFICATION_SIGN_FAILURE(400003, "验证签名失败");
 
     private ErrorCodeEnum(Integer code, String message) {
         this.code = code;
