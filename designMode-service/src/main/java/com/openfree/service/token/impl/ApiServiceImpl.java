@@ -1,10 +1,13 @@
 package com.openfree.service.token.impl;
 
 import com.github.pagehelper.util.StringUtil;
+import com.openfree.cache.redis.CacheKey;
+import com.openfree.cache.redis.RedisHelper;
 import com.openfree.enums.ErrorCodeEnum;
 import com.openfree.exception.ApiException;
 import com.openfree.service.token.ApiService;
 import com.openfree.service.token.TokenInfo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -15,6 +18,9 @@ import java.util.UUID;
 @Service("apiService")
 public class ApiServiceImpl implements ApiService {
 
+    @Autowired
+    private RedisHelper redisHelper;
+
     @Override
     public TokenInfo genTokenInfo(String userId, Long id) throws ApiException {
         if (StringUtil.isEmpty(userId) || null == id){
@@ -24,20 +30,15 @@ public class ApiServiceImpl implements ApiService {
         tokenInfo.setId(id);
         tokenInfo.setUserId(userId);
         String secret = genRandomStr();
+        String accessToken = genRandomStr();
         tokenInfo.setSecret(secret);
-
-
-        return null;
+        tokenInfo.setAccessToken(accessToken);
+        redisHelper.saveObj(buildTokenKey(userId,accessToken), tokenInfo);
+        return tokenInfo;
     }
 
-    private String buildSignParam(String userId, Integer id){
-        return userId + id;
-    }
-
-    private String buildSingAccessToken(String key, String secret){
-        //TODO 此处MD5(key + secret)
-
-        return null;
+    private String buildTokenKey(String key, String accessToken){
+        return CacheKey.ACCESS_TOKEN_CACHE_KEY + key + accessToken;
     }
 
 
