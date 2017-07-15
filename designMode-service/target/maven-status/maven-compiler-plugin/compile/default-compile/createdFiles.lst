@@ -1,5 +1,6 @@
 com/openfree/service/user/UserInfoService.class
 com/openfree/service/token/ApiService.class
+com/openfree/service/util/TypicalSectionAudience.class
 com/openfree/cache/redis/CacheKey.class
 com/openfree/cache/redis/RedisDataSource.class
 com/openfree/service/token/TokenInfo.class

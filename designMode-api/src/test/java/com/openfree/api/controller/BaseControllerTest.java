@@ -33,7 +33,7 @@ import org.springframework.web.context.WebApplicationContext;
 @WebAppConfiguration
 @TransactionConfiguration(transactionManager = "transactionManager",defaultRollback = true)
 @Transactional
-public class BaseControllerTest {
+public abstract class BaseControllerTest {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
     @Autowired

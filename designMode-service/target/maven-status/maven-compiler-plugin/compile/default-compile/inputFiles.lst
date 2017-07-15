@@ -5,6 +5,7 @@
 /home/luokai/project/designMode/designMode-service/src/main/java/com/openfree/cache/redis/RedisDataSource.java
 /home/luokai/project/designMode/designMode-service/src/main/java/com/openfree/service/token/impl/ApiServiceImpl.java
 /home/luokai/project/designMode/designMode-service/src/main/java/com/openfree/cache/redis/CacheKey.java
+/home/luokai/project/designMode/designMode-service/src/main/java/com/openfree/service/util/TypicalSectionAudience.java
 /home/luokai/project/designMode/designMode-service/src/main/java/com/openfree/service/util/PasswordHelper.java
 /home/luokai/project/designMode/designMode-service/src/main/java/com/openfree/service/user/UserInfoService.java
 /home/luokai/project/designMode/designMode-service/src/main/java/com/openfree/service/user/impl/UserInfoServiceImpl.java

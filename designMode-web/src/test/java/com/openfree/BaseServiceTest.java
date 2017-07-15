@@ -14,9 +14,5 @@ import org.springframework.transaction.annotation.Transactional;
 @ContextConfiguration("classpath:spring/applicationContext.xml")
 @TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
 @Transactional
-public class BaseServiceTest {
-    @Test
-    public void test1(){
-
-    }
+public abstract class BaseServiceTest {
 }

@@ -2,11 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c5d2896-6be8-4ffe-9e3e-a904ef800f2e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/v1/UserInfoController.java" afterPath="$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/v1/UserInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/../designMode-api/src/main/resources/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/src/main/resources/spring/springmvc.xml" afterPath="$PROJECT_DIR$/../designMode-api/src/main/resources/spring/springmvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/v1/UserInfoControllerTest.java" afterPath="$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/v1/UserInfoControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/../designMode-web/src/main/resources/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-common-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-domain-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-domain-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-service-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/test-classes/com/openfree/api/controller/BaseControllerTest.class" afterPath="$PROJECT_DIR$/../designMode-api/target/test-classes/com/openfree/api/controller/BaseControllerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-common/target/designMode-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-common/target/designMode-common-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-domain/target/designMode-domain-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-domain/target/designMode-domain-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-service/target/designMode-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-service/target/designMode-service-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-common-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-domain-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-domain-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-service-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/BaseControllerTest.java" afterPath="$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/BaseControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/../designMode-api/target/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/../designMode-api/target/classes/spring/springmvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-api/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-common/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-domain/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-service/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../designMode-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../designMode-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/BaseServiceTest.java" afterPath="$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/BaseServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/classes/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-web/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.cache.redis.RedisHelperTest.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.cache.redis.RedisHelperTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.api.ApiServiceTest.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.api.ApiServiceTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.util.PasswordHelperTest.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.util.PasswordHelperTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.BaseServiceTest.txt" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.BaseServiceTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.cache.redis.RedisHelperTest.txt" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.cache.redis.RedisHelperTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.api.ApiServiceTest.txt" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.api.ApiServiceTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.util.PasswordHelperTest.txt" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.util.PasswordHelperTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/v1/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,17 +130,61 @@
         <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/resources/spring/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="900">
-              <caret line="105" column="16" lean-forward="true" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
+              <caret line="105" column="16" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/resources/spring/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-196">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="164">
+              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/BaseControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/BaseServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="970">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -125,18 +202,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypicalSectionAudience.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/service/util/TypicalSectionAudience.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../designMode-domain/src/main/java/com/openfree/domain/model/user/UserInfo.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,39 +212,6 @@
                 <element signature="e#1398#1399#0" expanded="true" />
                 <element signature="e#1830#1831#0" expanded="true" />
                 <element signature="e#1861#1862#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInfoMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../designMode-domain/src/main/java/com/openfree/domain/mapper/user/UserInfoMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="73" lean-forward="false" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/service/BaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Before.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9-sources.jar!/org/aspectj/lang/annotation/Before.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -241,14 +273,12 @@
         <option value="$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/util/PasswordHelper.java" />
         <option value="$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/service/util/PasswordHelper.java" />
         <option value="$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/servie/util/PasswordHelperTest.java" />
-        <option value="$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/BaseServiceTest.java" />
         <option value="$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/service/token/ApiService.java" />
         <option value="$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/../designMode-api/pom.xml" />
         <option value="$PROJECT_DIR$/../designMode-common/src/main/java/com/openfree/exception/ApiException.java" />
         <option value="$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/service/token/impl/ApiServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/BaseControllerTest.java" />
         <option value="$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/service/user/UserInfoService.java" />
         <option value="$PROJECT_DIR$/../designMode-domain/src/main/resources/mappers/user/UserInfoMapper.xml" />
         <option value="$PROJECT_DIR$/../designMode-domain/src/main/java/com/openfree/domain/mapper/user/UserInfoMapper.java" />
@@ -263,6 +293,8 @@
         <option value="$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/v1/UserInfoControllerTest.java" />
         <option value="$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/v1/UserInfoController.java" />
         <option value="$PROJECT_DIR$/../designMode-api/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/BaseControllerTest.java" />
+        <option value="$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/BaseServiceTest.java" />
       </list>
     </option>
   </component>
@@ -925,8 +957,8 @@
     <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/6.0.6/mysql-connector-java-6.0.6.jar" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
   </component>
@@ -1655,7 +1687,7 @@
       <workItem from="1500093652422" duration="422000" />
       <workItem from="1500096833417" duration="16000" />
       <workItem from="1500098570195" duration="664000" />
-      <workItem from="1500100486532" duration="26358000" />
+      <workItem from="1500100486532" duration="26529000" />
     </task>
     <task id="LOCAL-00001" summary="add shiro">
       <created>1499876314753</created>
@@ -1700,7 +1732,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64529000" />
+    <option name="totallyTimeSpent" value="64700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1728,7 +1760,7 @@
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14262205" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.506424" sideWeight="0.49808007" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.506424" sideWeight="0.49808007" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2633833" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1812,14 +1844,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.4.RELEASE/spring-data-redis-1.8.4.RELEASE.jar!/org/springframework/data/redis/serializer/RedisSerializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.9.RELEASE/spring-test-4.3.9.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestMethodCallbacks.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -2100,34 +2124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/BaseServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/BaseControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../designMode-service/src/main/java/com/openfree/service/user/UserInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -2276,28 +2272,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/v1/UserInfoController.java">
+    <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/resources/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+        <state relative-caret-position="900">
+          <caret line="105" column="16" lean-forward="false" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="970">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/resources/spring/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="105" column="16" lean-forward="true" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
+        <state relative-caret-position="200">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/java/com/openfree/api/controller/v1/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="51" column="34" lean-forward="false" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../designMode-api/src/main/resources/spring/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="164">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../designMode-api/src/test/java/com/openfree/api/controller/BaseControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../designMode-web/src/test/java/com/openfree/BaseServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

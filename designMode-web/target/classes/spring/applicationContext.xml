@@ -14,6 +14,8 @@
     <!-- 加载配置文件 -->
     <context:property-placeholder location="classpath:conf/*.properties"/>
     <context:component-scan base-package="com.openfree.service"/>
+    <!-- 激活自动代理功能 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!-- 基本属性 url、user、password -->
         <property name="url" value="${jdbc_url}"/>
@@ -71,7 +73,7 @@
         </property>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <property name="basePackage" value="com.openfree.domain.mapper" />
     </bean>
 
@@ -99,7 +101,7 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="serviceAllOperation" expression="execution(* com.openfree.service.*.*(..))"/>
+        <aop:pointcut id="serviceAllOperation" expression="execution(* com.openfree.service..*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceAllOperation"/>
     </aop:config>
 

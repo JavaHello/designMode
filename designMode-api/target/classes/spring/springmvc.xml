@@ -12,11 +12,12 @@
 	<!-- 使用注解驱动 -->
 	<mvc:annotation-driven />
 
+	<!-- 视图解析 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
 
-	<!--  -->
+	<!-- 响应配置 -->
 	<mvc:annotation-driven>
 		<mvc:message-converters>
 			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
