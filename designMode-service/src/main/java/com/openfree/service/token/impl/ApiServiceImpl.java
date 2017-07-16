@@ -84,7 +84,7 @@ public class ApiServiceImpl implements ApiService {
             logger.debug("token为空,不予签名");
             return;
         }
-        if ( ErrorCodeEnum.SUCCESS.getCode() != param.getInteger("code") ){
+        if ( param.getInteger("code") == null || ErrorCodeEnum.SUCCESS.getCode() != param.getInteger("code") ){
             logger.debug("请求不成功,不予签名");
             return;
         }

@@ -1,2 +1,3 @@
 com/openfree/enums/ErrorCodeEnum.class
 com/openfree/exception/ApiException.class
+com/openfree/utils/ValidateUtils.class

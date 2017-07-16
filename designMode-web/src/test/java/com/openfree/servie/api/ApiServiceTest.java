@@ -2,6 +2,7 @@ package com.openfree.servie.api;
 
 import com.alibaba.fastjson.JSONObject;
 import com.openfree.BaseServiceTest;
+import com.openfree.enums.ErrorCodeEnum;
 import com.openfree.exception.ApiException;
 import com.openfree.service.token.ApiService;
 import com.openfree.service.token.TokenInfo;
@@ -28,6 +29,7 @@ public class ApiServiceTest extends BaseServiceTest {
         JSONObject json = new JSONObject();
         json.put("name", "zhang");
         json.put("passworld", "li");
+        json.put("code", ErrorCodeEnum.SUCCESS.getCode());
         apiService.sign(json, tokenInfo);
         Assert.assertTrue("验证签名失败", apiService.verificationSign(json,tokenInfo));
         logger.info("sing:{}", json);
