@@ -26,9 +26,9 @@ public class UserInfoControllerTest extends BaseControllerTest {
         logger.info("Test: UserInfoControllerTest.testRegisterUser()");
         JSONObject reqObj = new JSONObject();
         //"username", "upassword", "email", "province", "city","district",gender
-        JSONObject respObj = redisterUser(reqObj);
         reqObj.put("username", "zhang");
         reqObj.put("email", "123123");
+        JSONObject respObj = redisterUser(reqObj);
         verifyResponseParam(respObj);
         UserInfo zhang = userInfoService.findByUserName("zhang");
         Assert.assertTrue("注册失败:参数不匹配", new EqualsBuilder()
