@@ -77,11 +77,15 @@ public class ApiServiceImpl implements ApiService {
     @Override
     public void sign(JSONObject param, TokenInfo tokenInfo) throws ApiException {
         if (param == null){
-            logger.info("参数为空,不予签名");
+            logger.debug("参数为空,不予签名");
             return;
         }
         if (tokenInfo == null){
-            logger.info("token为空,不予签名");
+            logger.debug("token为空,不予签名");
+            return;
+        }
+        if ( ErrorCodeEnum.SUCCESS.getCode() != param.getInteger("code") ){
+            logger.debug("请求不成功,不予签名");
             return;
         }
         String signParam = genSignParam(param, SIGN);

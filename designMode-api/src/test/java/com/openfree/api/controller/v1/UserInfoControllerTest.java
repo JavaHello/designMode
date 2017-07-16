@@ -3,6 +3,7 @@ package com.openfree.api.controller.v1;
 import com.alibaba.fastjson.JSONObject;
 import com.openfree.api.controller.BaseControllerTest;
 import com.openfree.domain.model.user.UserInfo;
+import com.openfree.enums.ErrorCodeEnum;
 import com.openfree.service.user.UserInfoService;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.junit.Assert;
@@ -25,15 +26,10 @@ public class UserInfoControllerTest extends BaseControllerTest {
         logger.info("Test: UserInfoControllerTest.testRegisterUser()");
         JSONObject reqObj = new JSONObject();
         //"username", "upassword", "email", "province", "city","district",gender
+        JSONObject respObj = redisterUser(reqObj);
         reqObj.put("username", "zhang");
-        reqObj.put("upassword", "123123");
-        reqObj.put("gender", "1");
-        reqObj.put("email", "123123@open.com");
-        reqObj.put("province", "北京");
-        reqObj.put("city", "北京市");
-        reqObj.put("district", "朝阳区");
-        JSONObject respObj = post("/v1/app/user/register", reqObj, null, false, false);
-        verifyRequest(respObj);
+        reqObj.put("email", "123123");
+        verifyResponseParam(respObj);
         UserInfo zhang = userInfoService.findByUserName("zhang");
         Assert.assertTrue("注册失败:参数不匹配", new EqualsBuilder()
                 .append(zhang.getUsername(),reqObj.getString("username"))
@@ -43,6 +39,36 @@ public class UserInfoControllerTest extends BaseControllerTest {
                 .append(zhang.getCity(),reqObj.getString("city"))
                 .append(zhang.getDistrict(),reqObj.getString("district"))
                 .build());
+    }
+
+    private JSONObject redisterUser(JSONObject reqObj) throws Exception {
+
+        reqObj.put("upassword", "123123");
+        reqObj.put("gender", "1");
+        reqObj.put("province", "北京");
+        reqObj.put("city", "北京市");
+        reqObj.put("district", "朝阳区");
+        return post("/v1/app/user/register", reqObj, null, false, false);
+    }
+
+    @Test
+    public void testRepetitionRegisterUser() throws Exception {
+        logger.info("Test: UserInfoControllerTest.testRepetitionRegisterUser()");
+        JSONObject reqObj = new JSONObject();
+        reqObj.put("username", "zhang");
+        reqObj.put("email", "123123");
+        JSONObject respObj = redisterUser(reqObj);
+        verifyResponseParam(respObj);
+
+        reqObj.put("username", "zhang");
+        reqObj.put("email", "1231232323");
+        JSONObject respObj2 = redisterUser(reqObj);
+        Assert.assertTrue("重复注册：" + respObj2.getString(CODE_MSG), ErrorCodeEnum.USER_EXIST.getCode() == respObj2.getInteger(CODE));
+
+        reqObj.put("username", "zhangsss");
+        reqObj.put("email", "123123");
+        JSONObject respObj3 = redisterUser(reqObj);
+        Assert.assertTrue("重复注册：" + respObj3.getString(CODE_MSG), ErrorCodeEnum.EMAIL_EXIST.getCode() == respObj3.getInteger(CODE));
     }
 
     @Test

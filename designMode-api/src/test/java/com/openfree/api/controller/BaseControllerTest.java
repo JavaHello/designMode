@@ -36,6 +36,9 @@ import org.springframework.web.context.WebApplicationContext;
 public abstract class BaseControllerTest {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
+
+    protected final static String CODE = "code";
+    protected final static String CODE_MSG = "codeMsg";
     @Autowired
     private WebApplicationContext wac;
 
@@ -62,11 +65,11 @@ public abstract class BaseControllerTest {
         if (verify){
             apiService.verificationSign(param, tokenInfo);
         }
-        logger.info("请求参数:{}\n返回参数:{}",param, respObj);
+        logger.info("\n请求地址:{}\n请求参数:{}\n返回参数:{}", url, param, respObj);
         return respObj;
     }
 
-    protected void verifyRequest(JSONObject json){
-        Assert.assertTrue("FAILURE", json.getInteger("code") == ErrorCodeEnum.SUCCESS.getCode());
+    protected void verifyResponseParam(JSONObject json){
+        Assert.assertTrue("FAILURE", json.getInteger(CODE) == ErrorCodeEnum.SUCCESS.getCode());
     }
 }

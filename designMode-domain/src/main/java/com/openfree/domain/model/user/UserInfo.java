@@ -2,6 +2,8 @@ package com.openfree.domain.model.user;
 
 import com.openfree.domain.StandardModel;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 

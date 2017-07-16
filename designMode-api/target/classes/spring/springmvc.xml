@@ -34,4 +34,5 @@
 
 	<!-- 静态资源交给servlet处理 -->
 	<mvc:default-servlet-handler />
+
 </beans>
