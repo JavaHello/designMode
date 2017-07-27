@@ -1,248 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c5d2896-6be8-4ffe-9e3e-a904ef800f2e" name="Default" comment="add shiro">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/api.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/com/openfree/api/controller/BaseController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/com/openfree/api/controller/IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/com/openfree/api/controller/v1/UserInfoController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/asm-4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/cglib-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-common-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-domain-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/designMode-service-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.34.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.0.CR3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/jedis-2.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-6.0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-cache-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-core-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-ogdl-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-core-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-cipher-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-core-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-hash-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-event-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/shiro-lang-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.13.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-data-keyvalue-1.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-data-redis-1.8.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-oxm-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-test-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/lib/validation-api-2.0.0.CR3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/api-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/com/openfree/api/controller/BaseController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/com/openfree/api/controller/IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/com/openfree/api/controller/v1/UserInfoController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/spring/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/classes/spring/springmvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/surefire-reports/TEST-com.openfree.api.controller.v1.UserInfoControllerTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/surefire-reports/com.openfree.api.controller.v1.UserInfoControllerTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/test-classes/com/openfree/api/controller/BaseControllerTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-api/target/test-classes/com/openfree/api/controller/v1/UserInfoControllerTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/api_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/api_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/designMode_web_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/designMode_web_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/51289d82-874d-41d4-b70e-7252f6e76b30.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_34.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_0_CR3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_6_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_0_CR3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_4_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_9_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/classes/com/openfree/web/controller/IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/classes/spring/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-shiro.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/classes/spring/springmvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/jsp/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/asm-4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/cglib-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-common-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-domain-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/designMode-service-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/ehcache-core-2.6.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.34.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.0.CR3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jedis-2.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jsqlparser-0.9.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-6.0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/pagehelper-5.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-cache-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-core-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-config-ogdl-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-core-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-cipher-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-core-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-crypto-hash-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-ehcache-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-event-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-lang-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-spring-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/shiro-web-1.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-aspects-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-context-support-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-1.13.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-data-keyvalue-1.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-data-redis-1.8.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-oxm-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/lib/validation-api-2.0.0.CR3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/web-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-common/target/classes/com/openfree/enums/ErrorCodeEnum.class" afterPath="$PROJECT_DIR$/../designMode-common/target/classes/com/openfree/enums/ErrorCodeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-common/target/designMode-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-common/target/designMode-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/model/user/UserInfo.class" afterPath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/model/user/UserInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-domain/target/designMode-domain-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-domain/target/designMode-domain-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-service/target/designMode-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../designMode-service/target/designMode-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-common/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-domain/designMode-domain.iml" afterPath="$PROJECT_DIR$/../designMode-domain/designMode-domain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-domain/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-service/designMode-service.iml" afterPath="$PROJECT_DIR$/../designMode-service/designMode-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../designMode-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/classes/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.cache.redis.RedisHelperTest.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.cache.redis.RedisHelperTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.api.ApiServiceTest.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.api.ApiServiceTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.util.PasswordHelperTest.xml" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.util.PasswordHelperTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.cache.redis.RedisHelperTest.txt" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.cache.redis.RedisHelperTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.api.ApiServiceTest.txt" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.api.ApiServiceTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.util.PasswordHelperTest.txt" afterPath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.util.PasswordHelperTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../designMode-web/web.iml" afterPath="$PROJECT_DIR$/../designMode-web/web.iml" />
+    <list default="true" id="3c5d2896-6be8-4ffe-9e3e-a904ef800f2e" name="Default" comment="clean">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/classes/com/openfree/enums/ErrorCodeEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/classes/com/openfree/exception/ApiException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/classes/com/openfree/utils/ValidateUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/classes/conf/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/classes/conf/redis.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/classes/mybatis/mybatisConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/designMode-common-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/Examined.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/StandardModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/mapper/user/UserInfoMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/mapper/user/UserRegTraceMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/model/user/UserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/com/openfree/domain/model/user/UserRegTrace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/mappers/user/UserInfoMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/classes/mappers/user/UserRegTraceMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/designMode-domain-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/cache/redis/CacheKey.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/cache/redis/RedisDataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/cache/redis/RedisHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/BaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/token/ApiService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/token/TokenInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/token/impl/ApiServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/user/UserInfoService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/user/impl/UserInfoServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/util/PasswordHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/classes/com/openfree/service/util/TypicalSectionAudience.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/designMode-service-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/classes/com/openfree/web/controller/IndexController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/classes/spring/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/classes/spring/spring-shiro.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/classes/spring/springmvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.cache.redis.RedisHelperTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.api.ApiServiceTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/TEST-com.openfree.servie.util.PasswordHelperTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.cache.redis.RedisHelperTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.api.ApiServiceTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/surefire-reports/com.openfree.servie.util.PasswordHelperTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/test-classes/com/openfree/BaseServiceTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/test-classes/com/openfree/cache/redis/RedisHelperTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/test-classes/com/openfree/servie/api/ApiServiceTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../designMode-web/target/test-classes/com/openfree/servie/util/PasswordHelperTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -556,43 +375,6 @@
               <item name="designMode-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="designMode-api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designMode-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designMode-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designMode-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designMode-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designMode-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designMode-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designMode-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designMode-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designMode-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designMode-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="designMode-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -1355,13 +1137,17 @@
       <option name="project" value="LOCAL" />
       <updated>1499876314754</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="clean">
+      <created>1501164898262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1501164898263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApiServiceTest - 2017.07.16 at 11h 13m 04s.xml">
-      <configuration name="ApiServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ApiServiceTest - 2017.07.16 at 11h 15m 29s.xml">
       <configuration name="ApiServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -1370,6 +1156,9 @@
     </history-entry>
     <history-entry file="UserInfoControllerTest - 2017.07.16 at 11h 23m 28s.xml">
       <configuration name="UserInfoControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserInfoControllerTest_testRegisterUser - 2017.07.27 at 22h 19m 35s.xml">
+      <configuration name="UserInfoControllerTest.testRegisterUser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserInfoControllerTest_testRepetitionRegisterUser - 2017.07.16 at 10h 42m 15s.xml">
       <configuration name="UserInfoControllerTest.testRepetitionRegisterUser" configurationId="JUnit" />
@@ -1391,7 +1180,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73083000" />
+    <option name="totallyTimeSpent" value="73433000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1409,14 +1198,14 @@
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22994652" sideWeight="0.5041141" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32834226" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38014263" sideWeight="0.49441788" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19967087" sideWeight="0.49441788" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1542219" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14262205" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50441504" sideWeight="0.49808007" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50428265" sideWeight="0.49808007" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2633833" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32655245" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1518,7 +1307,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add shiro" />
-    <option name="LAST_COMMIT_MESSAGE" value="add shiro" />
+    <MESSAGE value="clean" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
