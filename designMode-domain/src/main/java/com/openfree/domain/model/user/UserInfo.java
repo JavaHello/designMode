@@ -1,16 +1,17 @@
 package com.openfree.domain.model.user;
 
 import com.openfree.domain.StandardModel;
+import org.hibernate.validator.constraints.Email;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.util.Date;
 
 public class UserInfo extends StandardModel implements Serializable {
 
+    @Size(min = 2, max = 12, message = "用户名必须在2到12范围之间")
     private String username;
 
+    @Size(min = 2, max = 16, message = "昵称必须在2到16范围之间")
     private String nickname;
 
     private String upassword;
@@ -21,6 +22,7 @@ public class UserInfo extends StandardModel implements Serializable {
 
     private String job;
 
+    @Email
     private String email;
 
     private String province;

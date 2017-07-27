@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 /**
  * Created by luokai on 17-7-15.
@@ -46,6 +47,7 @@ public class UserInfoController extends BaseController {
             JSONObject reqJson = JSON.parseObject(param);
             verifyParamEmpty(reqJson, "username", "upassword", "email", "province", "city","district", "gender");
             UserInfo userInfo = reqJson.toJavaObject(UserInfo.class);
+            super.validateModel(userInfo);
             userInfoService.verifyExist(userInfo.getUsername(), userInfo.getEmail());
             userInfo.setCreateUserId(1L);
             userInfoService.registerUser(userInfo);

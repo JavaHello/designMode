@@ -5,14 +5,21 @@ import com.github.pagehelper.util.StringUtil;
 import com.openfree.enums.ErrorCodeEnum;
 import com.openfree.exception.ApiException;
 import com.openfree.service.token.ApiService;
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 import java.io.IOException;
+import java.util.Set;
 
 /**
  * Created by luokai on 17-7-15.
@@ -26,6 +33,13 @@ public class BaseController {
 
     @Autowired
     protected ApiService apiService;
+
+    private Validator validator;
+    @PostConstruct
+    private void initValidator(){
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        validator = factory.getValidator();
+    }
 
     protected String readRequestParam(HttpServletRequest request){
         try {
@@ -76,6 +90,15 @@ public class BaseController {
 
     protected final void putMessage(JSONObject json,ErrorCodeEnum errorCodeEnum,String message){
         putMessage(json, errorCodeEnum.getCode(), message);
+    }
+
+    protected final void validateModel(Object object) throws ApiException {
+        Set<ConstraintViolation<Object>> validate = validator.validate(object);
+        if (CollectionUtils.isNotEmpty(validate)){
+            for (ConstraintViolation<Object> objectConstraintViolation : validate) {
+                throw new ApiException(ErrorCodeEnum.PARAMETER_ERROR, objectConstraintViolation.getMessage());
+            }
+        }
     }
 
 }

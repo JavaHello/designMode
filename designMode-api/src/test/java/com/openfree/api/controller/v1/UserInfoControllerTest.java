@@ -27,7 +27,7 @@ public class UserInfoControllerTest extends BaseControllerTest {
         JSONObject reqObj = new JSONObject();
         //"username", "upassword", "email", "province", "city","district",gender
         reqObj.put("username", "zhang");
-        reqObj.put("email", "123123");
+        reqObj.put("email", "123123@sdf.com");
         JSONObject respObj = redisterUser(reqObj);
         verifyResponseParam(respObj);
         UserInfo zhang = userInfoService.findByUserName("zhang");
@@ -56,17 +56,17 @@ public class UserInfoControllerTest extends BaseControllerTest {
         logger.info("Test: UserInfoControllerTest.testRepetitionRegisterUser()");
         JSONObject reqObj = new JSONObject();
         reqObj.put("username", "zhang");
-        reqObj.put("email", "123123");
+        reqObj.put("email", "123123@sdf.com");
         JSONObject respObj = redisterUser(reqObj);
         verifyResponseParam(respObj);
 
         reqObj.put("username", "zhang");
-        reqObj.put("email", "1231232323");
+        reqObj.put("email", "12312asas3@sdf.com");
         JSONObject respObj2 = redisterUser(reqObj);
         Assert.assertTrue("重复注册：" + respObj2.getString(CODE_MSG), ErrorCodeEnum.USER_EXIST.getCode() == respObj2.getInteger(CODE));
 
         reqObj.put("username", "zhangsss");
-        reqObj.put("email", "123123");
+        reqObj.put("email", "123123@sdf.com");
         JSONObject respObj3 = redisterUser(reqObj);
         Assert.assertTrue("重复注册：" + respObj3.getString(CODE_MSG), ErrorCodeEnum.EMAIL_EXIST.getCode() == respObj3.getInteger(CODE));
     }
