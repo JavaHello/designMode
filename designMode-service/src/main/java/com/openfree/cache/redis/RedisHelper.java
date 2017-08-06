@@ -34,4 +34,8 @@ public class RedisHelper {
         ValueOperations<String,T> valueOperations = redisTemplate.opsForValue();
         return valueOperations.get(key);
     }
+
+    public void removeCacheObject(Object key){
+        redisTemplate.delete(key);
+    }
 }

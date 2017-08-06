@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.openfree.domain.mapper.user.OAuth2AppMapper" >
+  <resultMap id="BaseResultMap" type="com.openfree.domain.model.user.OAuth2App" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="app_name" property="appName" jdbcType="VARCHAR" />
+    <result column="app_id" property="appId" jdbcType="VARCHAR" />
+    <result column="app_secret" property="appSecret" jdbcType="VARCHAR" />
+    <result column="app_icon" property="appIcon" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, app_name, app_id, app_secret, app_icon
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from oauth2_app
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from oauth2_app
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.openfree.domain.model.user.OAuth2App" >
+    insert into oauth2_app (id, app_name, app_id, 
+      app_secret, app_icon)
+    values (#{id,jdbcType=BIGINT}, #{appName,jdbcType=VARCHAR}, #{appId,jdbcType=VARCHAR}, 
+      #{appSecret,jdbcType=VARCHAR}, #{appIcon,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.openfree.domain.model.user.OAuth2App" >
+    insert into oauth2_app
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="appName != null" >
+        app_name,
+      </if>
+      <if test="appId != null" >
+        app_id,
+      </if>
+      <if test="appSecret != null" >
+        app_secret,
+      </if>
+      <if test="appIcon != null" >
+        app_icon,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="appName != null" >
+        #{appName,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null" >
+        #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="appSecret != null" >
+        #{appSecret,jdbcType=VARCHAR},
+      </if>
+      <if test="appIcon != null" >
+        #{appIcon,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.openfree.domain.model.user.OAuth2App" >
+    update oauth2_app
+    <set >
+      <if test="appName != null" >
+        app_name = #{appName,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null" >
+        app_id = #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="appSecret != null" >
+        app_secret = #{appSecret,jdbcType=VARCHAR},
+      </if>
+      <if test="appIcon != null" >
+        app_icon = #{appIcon,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.openfree.domain.model.user.OAuth2App" >
+    update oauth2_app
+    set app_name = #{appName,jdbcType=VARCHAR},
+      app_id = #{appId,jdbcType=VARCHAR},
+      app_secret = #{appSecret,jdbcType=VARCHAR},
+      app_icon = #{appIcon,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="findByAppId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+     FROM oauth2_app WHERE app_id = #{appId,jdbcType=VARCHAR}
+  </select>
+</mapper>
